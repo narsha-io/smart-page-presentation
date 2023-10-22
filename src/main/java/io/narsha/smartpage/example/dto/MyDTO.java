@@ -1,4 +1,4 @@
-package io.narsha.smartpage.example;
+package io.narsha.smartpage.example.dto;
 
 import io.narsha.smartpage.example.repository.StatRepository;
 import lombok.AllArgsConstructor;

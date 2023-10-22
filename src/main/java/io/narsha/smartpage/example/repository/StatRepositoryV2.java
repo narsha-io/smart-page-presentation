@@ -1,6 +1,6 @@
 package io.narsha.smartpage.example.repository;
 
-import io.narsha.smartpage.example.MyDTO;
+import io.narsha.smartpage.example.dto.MyDTO;
 import io.narsha.smartpage.example.model.Artist_;
 import io.narsha.smartpage.example.model.OnlinePlatform_;
 import io.narsha.smartpage.example.model.TrackInPlaylist;
@@ -11,20 +11,13 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.From;
-import jakarta.persistence.criteria.JoinType;
-import jakarta.persistence.criteria.Order;
 import jakarta.persistence.criteria.Path;
 import jakarta.persistence.criteria.Predicate;
-import org.hibernate.query.sqm.internal.QuerySqmImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
-import org.springframework.data.jpa.repository.query.QueryUtils;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 @Component
 public class StatRepositoryV2 {
